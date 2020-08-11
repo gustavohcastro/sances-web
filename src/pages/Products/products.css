@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+#products-page{
+    display: flex;
+    flex-direction: row;
+    background-color: #eee;
+}
+#products-page .content{
+    padding: 30px;
+}
+#products-page .content h1{
+    color: #00A88F;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+#products-page .content h3{
+    margin-top: 30px;
+    color: #00A88F;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+#products-page .content form{
+    display: flex; 
+    flex-direction: row;
+    margin-top: 20px;
+}
+#products-page .content form input {
+    border-radius: 10px;
+    height: 40px;
+    border: 0.5px solid #999;
+    outline: 0px;
+    color: #999;
+    font-size: 18px;
+    padding-left: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 20px;
+}
+#products-page .content form .input-large {
+    width: 400px;
+}
+#products-page .content form button {
+    width: 200px;
+    background-color: #00A88F;
+    border: 0px;
+    outline: 0;
+    color: #fafafa;
+    font-size: 18px;
+    font-family: Roboto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
