@@ -39,7 +39,7 @@
 #products-page .content form .input-large {
     width: 400px;
 }
-button {
+#products-page .content form button {
     width: 200px;
     background-color: #00A88F;
     border: 0px;
@@ -68,14 +68,15 @@ button {
     border-radius: 20px;
     height: 420px;
     overflow-y: scroll;
+    width: 1000px;
 }
 #products-list .product-item{
     display: flex;
     flex: 1;
-    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid #ddd;
+    cursor: pointer;
 
 }
 #products-list .product-item p{
@@ -89,21 +90,60 @@ button {
 .strong{
     font-weight: bold;
 }
-.large{
-    margin-top: 20px;
-    height: 50px;
+#actions{
+    width: 50px;
 }
-#new-order{
+.options-row{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
+    flex: 1;
+    justify-content: space-between;
+    margin-top: 30px;
 }
-#new-order p{
-    font-size: 14px;
-    font-style: italic;
-    color: #333;
-    margin-left: 20px;
+.options-row button{
+    width: 200px;
+    background-color: #00A88F;
+    border: 0px;
+    outline: 0;
+    color: #fafafa;
+    font-size: 18px;
+    font-family: Roboto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.options-row a{
+    width: 200px;
+    background-color: #00A88F;
+    border: 0px;
+    outline: 0;
+    color: #fafafa;
+    font-size: 18px;
+    font-family: Roboto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    text-decoration: none;
+}
+.options-row div{
+    display: flex;
+    flex-direction: row;
+}
+.options-row div button + button {
+    margin-left: 15px;
+}
+
+.options-row div button .disable{
+    background-color: #333;
+    cursor: not-allowed;
 }
 .selected{
     background-color: rgba(0, 168, 143, 0.2);
